@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class DH_BTS_Model {
+    var drivers = [
+        "Alex" : "6475550001",
+        "Ben" : "6475550002",
+        "Charlie" : "6475550003",
+        "Derek" : "6475550004",
+        "Eric" : "6475550005",
+        "Frank" : "6475550006",
+        "Gerry" : "6475550007"
+    ]
+}

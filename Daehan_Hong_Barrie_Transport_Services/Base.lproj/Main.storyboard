@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Daehan_Hong_Barrie_Transport_Services" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barrie Transport Services" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ets-51-toU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Daehan Hong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zq6-vy-4hV">
+                                <rect key="frame" x="0.0" y="839" width="414" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5Cq-jQ-dfD">
+                                <rect key="frame" x="0.0" y="73" width="414" height="766"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5Cq-jQ-dfD" firstAttribute="top" secondItem="ets-51-toU" secondAttribute="bottom" id="ISq-TI-Xgd"/>
+                            <constraint firstItem="Zq6-vy-4hV" firstAttribute="top" secondItem="5Cq-jQ-dfD" secondAttribute="bottom" id="MSX-bH-t8W"/>
+                            <constraint firstItem="ets-51-toU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nk0-pi-Wng"/>
+                            <constraint firstItem="Zq6-vy-4hV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="O4D-87-d5t"/>
+                            <constraint firstItem="ets-51-toU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SRx-L1-fkz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zq6-vy-4hV" secondAttribute="trailing" id="Ubt-bF-WVY"/>
+                            <constraint firstItem="5Cq-jQ-dfD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="W78-mZ-iRb"/>
+                            <constraint firstItem="ets-51-toU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WCu-rh-sa6"/>
+                            <constraint firstItem="Zq6-vy-4hV" firstAttribute="top" secondItem="5Cq-jQ-dfD" secondAttribute="bottom" id="XrE-2f-I9I"/>
+                            <constraint firstAttribute="trailing" secondItem="5Cq-jQ-dfD" secondAttribute="trailing" id="j7Z-aF-Cph"/>
+                            <constraint firstItem="5Cq-jQ-dfD" firstAttribute="top" secondItem="ets-51-toU" secondAttribute="bottom" id="k3Z-a1-DAy"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Zq6-vy-4hV" secondAttribute="bottom" id="n6H-Rh-rJg"/>
+                            <constraint firstItem="5Cq-jQ-dfD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="osB-lL-bsq"/>
+                            <constraint firstItem="5Cq-jQ-dfD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rmI-dR-c8n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="5Cq-jQ-dfD" id="Z1z-fJ-QAX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
